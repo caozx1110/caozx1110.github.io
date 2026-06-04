@@ -4,219 +4,269 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zhanxiang Cao</title>
-    <meta name="description" content="Zhanxiang Cao, Ph.D. student in robotics and reinforcement learning.">
+    <meta name="description" content="Academic homepage of Zhanxiang Cao. Robotics, reinforcement learning, humanoid and legged robots.">
     <meta name="author" content="Zhanxiang Cao">
     <meta property="og:title" content="Zhanxiang Cao">
     <meta property="og:description" content="Academic homepage of Zhanxiang Cao.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/zhanxiang-cao.jpg">
-    <link rel="icon" href="assets/zhanxiang-cao.jpg">
-    <link rel="stylesheet" href="styles.css">
+    <meta property="og:image" content="assets/profile.jpg">
+    <link rel="icon" href="assets/profile.jpg">
+    <link rel="stylesheet" href="academic.css?v=20260604">
   </head>
   <body>
-    <div class="page">
-      <header class="site-header">
-        <a class="site-title" href="#top">Zhanxiang Cao</a>
-        <nav aria-label="Main navigation">
+    <div class="layout">
+      <aside class="sidebar">
+        <img class="avatar" src="assets/profile.jpg" alt="Zhanxiang Cao">
+        <h1>Zhanxiang Cao</h1>
+        <p class="cn-name">曹展翔</p>
+        <p class="role">Ph.D. Student<br>Shanghai Jiao Tong University</p>
+        <p class="role">Shanghai Innovation Institute</p>
+
+        <nav class="links" aria-label="Profile links">
+          <a href="mailto:caozx1110@163.com">Email</a>
+          <a href="https://scholar.google.com/citations?user=Qaqc4IMAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a href="https://github.com/caozx1110" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
           <a href="#publications">Publications</a>
           <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
         </nav>
-      </header>
 
-      <main id="top">
-        <section class="intro">
-          <div class="intro-text">
-            <h1>Zhanxiang Cao <span>曹展翔</span></h1>
-            <p class="position">
-              Ph.D. Student, Computer Science<br>
-              Shanghai Jiao Tong University / Shanghai Innovation Institute
-            </p>
-            <p>
-              I work on robot learning, reinforcement learning, and control for
-              humanoid and legged robots, with interests in motion skills,
-              loco-manipulation, robust control, and sim-to-real transfer.
-            </p>
-            <p class="links">
-              <a href="mailto:caozx1110@163.com">Email</a>
-              <a href="https://scholar.google.com/citations?user=Qaqc4IMAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
-              <a href="https://github.com/caozx1110" target="_blank" rel="noreferrer">GitHub</a>
-            </p>
-          </div>
-          <img class="portrait" src="assets/zhanxiang-cao.jpg" alt="Zhanxiang Cao">
-        </section>
-
-        <section>
-          <h2>Research Interests</h2>
+        <section id="about" class="section">
+          <h2>About</h2>
           <p>
-            Robot learning, reinforcement learning, humanoid robots, legged
-            locomotion, vision-informed robot learning, and safety-aware control.
+            I am a direct-track Ph.D. student in Computer Science at Shanghai
+            Jiao Tong University and Shanghai Innovation Institute. My research
+            focuses on robot learning, reinforcement learning, humanoid robots,
+            legged locomotion, loco-manipulation, and sim-to-real transfer.
+          </p>
+          <p>
+            I received my B.Eng. in Automation from Tsinghua University in 2023.
           </p>
         </section>
 
-        <section id="publications">
-          <h2>Publications</h2>
-          <p class="note">
-            Full list from Google Scholar, updated June 4, 2026.
-          </p>
-
-          <h3>2026</h3>
-          <ol class="pub-list">
-            <li>
-              <p class="pub-title">A Heterogeneous Architecture for Robot RL Beyond GPU-Dominant Paradigms</p>
-              <p>Y Jia, <strong>Z Cao</strong>, M Yu, H Zhang, S Chen, D Jiang, M Li, X Li, Y Liu, J Wu, Z Li, ...</p>
-              <p>arXiv preprint arXiv:2605.30313, 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:HoB7MX3m0LUC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2605.30313" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">GS-Playground: A High-Throughput Photorealistic Simulator for Vision-Informed Robot Learning</p>
-              <p>Y Jia, H Zhang, Z Zhang, J Wu, M Yu, Z Wang, D Jiang, Z Li, C Cao, Z Yu, ...</p>
-              <p>arXiv preprint arXiv:2604.25459, 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:pqnbT2bcN3wC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2604.25459" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">HierKick: Hierarchical Reinforcement Learning for Vision-Guided Soccer Robot Control</p>
-              <p>Y Chen, Z Zhang, <strong>Z Cao</strong>, Y Chen, S Fu, L Yan, Y Zhang, J Liu, H Li, Y Gao</p>
-              <p>arXiv preprint arXiv:2603.00948, 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:M05iB0D1s5AC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2603.00948" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">HiWET: Hierarchical World-Frame End-Effector Tracking for Long-Horizon Humanoid Loco-Manipulation</p>
-              <p><strong>Z Cao</strong>, L Yan, Y Zhang, S Chen, J Ma, T Zhan, S Fu, Y Jia, C Lu, Y Gao</p>
-              <p>arXiv preprint arXiv:2602.06341, 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:ldfaerwXgEUC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2602.06341" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">FocusNav: Spatial Selective Attention with Waypoint Guidance for Humanoid Local Navigation</p>
-              <p>Y Zhang, J Ma, L Yan, <strong>Z Cao</strong>, Y Zhang, H Li, Y Gao</p>
-              <p>arXiv preprint arXiv:2601.12790, 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:2P1L_qKh6hAC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2601.12790" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Keep on Going: Learning Robust Humanoid Motion Skills via Selective Adversarial Training</p>
-              <p>Y Zhang, <strong>Z Cao</strong>, B Nie, H Li, Z Jiangwei, Q Sun, X Hu, X Yang, Y Gao</p>
-              <p>Proceedings of the AAAI Conference on Artificial Intelligence 40 (22), 18800 ..., 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:35N4QoGY0k4C" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Coordinated Humanoid Robot Locomotion with Symmetry Equivariant Reinforcement Learning Policy</p>
-              <p>B Nie, Y Zhang, R Jin, <strong>Z Cao</strong>, H Lin, X Yang, Y Gao</p>
-              <p>Proceedings of the AAAI Conference on Artificial Intelligence 40 (22), 18523 ..., 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:RGFaLdJalmkC" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-          </ol>
-
-          <h3>2025</h3>
-          <ol class="pub-list">
-            <li>
-              <p class="pub-title">Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots</p>
-              <p><strong>Z Cao</strong>, Y Zhang, B Nie, H Lin, H Li, Y Gao</p>
-              <p>arXiv preprint arXiv:2506.23125, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:BqipwSGYUEgC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2506.23125" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots</p>
-              <p>Y Zhang, B Nie, <strong>Z Cao</strong>, Y Fu, Y Gao</p>
-              <p>arXiv preprint arXiv:2506.00472, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:O3NaXMp0MMsC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Minimizing Acoustic Noise: Enhancing Quiet Locomotion for Quadruped Robots in Indoor Applications</p>
-              <p><strong>Z Cao</strong>, B Nie, Y Zhang, Y Gao</p>
-              <p>2025 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:lSLTfruPkqcC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2506.23114" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Contrastive Forward Prediction Reinforcement Learning for Adaptive Fault-Tolerant Legged Robots</p>
-              <p>Y Fu, Y Zhang, Q Yang, L Yan, <strong>Z Cao</strong>, Y Gao</p>
-              <p>Conference on Robot Learning, 3285-3303, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:hMod-77fHWUC" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Learning Robust Motion Skills via Critical Adversarial Attacks for Humanoid Robots</p>
-              <p>Y Zhang, <strong>Z Cao</strong>, B Nie, H Li, Y Gao</p>
-              <p>arXiv e-prints, arXiv:2507.08303, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:NaGl4SEjCO4C" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2507.08303" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Anticipate Before Act: Prediction Based Constrained Reinforcement Learning Framework for Skiing Robot Control</p>
-              <p>H Li, X Yang, J Zhu, <strong>Z Cao</strong>, Y Zhang, Y Gao</p>
-              <p>IEEE Robotics and Automation Letters, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:J_g5lzvAfSwC" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-            <li>
-              <p class="pub-title">UniLegs: Universal Multi-Legged Robot Control through Morphology-Agnostic Policy Distillation</p>
-              <p>W Xi, <strong>Z Cao</strong>, C Ming, J Zheng, G Zhou</p>
-              <p>2025 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:g5m5HwL7SMYC" target="_blank" rel="noreferrer">Scholar</a> <a href="https://arxiv.org/abs/2507.22653" target="_blank" rel="noreferrer">arXiv</a></p>
-            </li>
-            <li>
-              <p class="pub-title">Stochastic Trajectory Optimization for Robotic Skill Acquisition From a Suboptimal Demonstration</p>
-              <p>C Ming, Z Wang, B Zhang, <strong>Z Cao</strong>, X Duan, J He</p>
-              <p>IEEE Robotics and Automation Letters, 2025.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:GnPB-g6toBAC" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-          </ol>
-
-          <h3>2024</h3>
-          <ol class="pub-list">
-            <li>
-              <p class="pub-title">Constrained Dirichlet Distribution Policy: Guarantee Zero Constraint Violation Reinforcement Learning for Continuous Robotic Control</p>
-              <p>J Ma, <strong>Z Cao</strong>, Y Gao</p>
-              <p>IEEE Robotics and Automation Letters 9 (12), 11690-11697, 2024.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:70eg2SAEIzsC" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-          </ol>
-
-          <h3>2023</h3>
-          <ol class="pub-list">
-            <li>
-              <p class="pub-title">Real is Better than Perfect: Sim-to-Real Robotic System in Secondary School Education</p>
-              <p>J Gao, H Guo, <strong>Z Cao</strong>, P Huang, G Zhou</p>
-              <p>2023 IEEE/RSJ International Conference on Intelligent Robots and Systems, 2023.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:vV6vV6tmYwMC" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-          </ol>
-
-          <h3>Preprints and Manuscripts</h3>
-          <ol class="pub-list">
-            <li>
-              <p class="pub-title">Safety Protection for Reinforcement Learning-Based Motion Policy Improvement in Legged Robots</p>
-              <p>Y Zhang, Y Gao, <strong>Z Cao</strong></p>
-              <p>Available at SSRN 5067499.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:ns9cj8rnVeAC" target="_blank" rel="noreferrer">Scholar</a></p>
-            </li>
-          </ol>
-        </section>
-
-        <section id="education">
-          <h2>Education</h2>
-          <ul class="plain-list">
-            <li>
-              <strong>Shanghai Jiao Tong University / Shanghai Innovation Institute</strong>,
-              Direct-track Ph.D. student in Computer Science, 2023 - Present
-            </li>
-            <li>
-              <strong>Tsinghua University</strong>,
-              B.Eng. in Automation, 2019 - 2023
-            </li>
+        <section id="news" class="section">
+          <h2>News</h2>
+          <ul class="news-list">
+            <li><span>Jun 2026</span> Homepage updated with the complete Google Scholar publication list.</li>
+            <li><span>2026</span> HiWET is available as an arXiv preprint.</li>
+            <li><span>2025</span> Work on quiet quadruped locomotion and morphology-agnostic multi-legged control appeared at IROS.</li>
           </ul>
         </section>
 
-        <section id="contact">
-          <h2>Contact</h2>
-          <p>
-            Email: <a href="mailto:caozx1110@163.com">caozx1110@163.com</a><br>
-            GitHub: <a href="https://github.com/caozx1110" target="_blank" rel="noreferrer">github.com/caozx1110</a><br>
-            Google Scholar: <a href="https://scholar.google.com/citations?user=Qaqc4IMAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Zhanxiang Cao</a>
-          </p>
-        </section>
-      </main>
+        <section id="publications" class="section">
+          <h2>Publications</h2>
+          <p class="section-note">Complete list from Google Scholar, updated June 4, 2026.</p>
 
-      <footer>
-        Last updated: June 2026. © <span id="year">2026</span> Zhanxiang Cao.
-      </footer>
+          <h3>2026</h3>
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">A Heterogeneous Architecture for Robot RL Beyond GPU-Dominant Paradigms</p>
+              <p class="pub-authors">Y Jia, <strong>Z Cao</strong>, M Yu, H Zhang, S Chen, D Jiang, M Li, X Li, Y Liu, J Wu, Z Li, ...</p>
+              <p class="pub-venue">arXiv preprint arXiv:2605.30313</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:HoB7MX3m0LUC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2605.30313" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">GS-Playground: A High-Throughput Photorealistic Simulator for Vision-Informed Robot Learning</p>
+              <p class="pub-authors">Y Jia, H Zhang, Z Zhang, J Wu, M Yu, Z Wang, D Jiang, Z Li, C Cao, Z Yu, ...</p>
+              <p class="pub-venue">arXiv preprint arXiv:2604.25459</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:pqnbT2bcN3wC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2604.25459" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">HierKick: Hierarchical Reinforcement Learning for Vision-Guided Soccer Robot Control</p>
+              <p class="pub-authors">Y Chen, Z Zhang, <strong>Z Cao</strong>, Y Chen, S Fu, L Yan, Y Zhang, J Liu, H Li, Y Gao</p>
+              <p class="pub-venue">arXiv preprint arXiv:2603.00948</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:M05iB0D1s5AC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2603.00948" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication highlight">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">HiWET: Hierarchical World-Frame End-Effector Tracking for Long-Horizon Humanoid Loco-Manipulation</p>
+              <p class="pub-authors"><strong>Z Cao</strong>, L Yan, Y Zhang, S Chen, J Ma, T Zhan, S Fu, Y Jia, C Lu, Y Gao</p>
+              <p class="pub-venue">arXiv preprint arXiv:2602.06341</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:ldfaerwXgEUC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2602.06341" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">FocusNav: Spatial Selective Attention with Waypoint Guidance for Humanoid Local Navigation</p>
+              <p class="pub-authors">Y Zhang, J Ma, L Yan, <strong>Z Cao</strong>, Y Zhang, H Li, Y Gao</p>
+              <p class="pub-venue">arXiv preprint arXiv:2601.12790</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:2P1L_qKh6hAC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2601.12790" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">Keep on Going: Learning Robust Humanoid Motion Skills via Selective Adversarial Training</p>
+              <p class="pub-authors">Y Zhang, <strong>Z Cao</strong>, B Nie, H Li, Z Jiangwei, Q Sun, X Hu, X Yang, Y Gao</p>
+              <p class="pub-venue">Proceedings of the AAAI Conference on Artificial Intelligence 40 (22), 18800 ...</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:35N4QoGY0k4C" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">Coordinated Humanoid Robot Locomotion with Symmetry Equivariant Reinforcement Learning Policy</p>
+              <p class="pub-authors">B Nie, Y Zhang, R Jin, <strong>Z Cao</strong>, H Lin, X Yang, Y Gao</p>
+              <p class="pub-venue">Proceedings of the AAAI Conference on Artificial Intelligence 40 (22), 18523 ...</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:RGFaLdJalmkC" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+
+          <h3>2025</h3>
+          <article class="publication highlight">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots</p>
+              <p class="pub-authors"><strong>Z Cao</strong>, Y Zhang, B Nie, H Lin, H Li, Y Gao</p>
+              <p class="pub-venue">arXiv preprint arXiv:2506.23125</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:BqipwSGYUEgC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2506.23125" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots</p>
+              <p class="pub-authors">Y Zhang, B Nie, <strong>Z Cao</strong>, Y Fu, Y Gao</p>
+              <p class="pub-venue">arXiv preprint arXiv:2506.00472</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:O3NaXMp0MMsC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication highlight">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">Minimizing Acoustic Noise: Enhancing Quiet Locomotion for Quadruped Robots in Indoor Applications</p>
+              <p class="pub-authors"><strong>Z Cao</strong>, B Nie, Y Zhang, Y Gao</p>
+              <p class="pub-venue">2025 IEEE/RSJ International Conference on Intelligent Robots and Systems</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:lSLTfruPkqcC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2506.23114" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">Contrastive Forward Prediction Reinforcement Learning for Adaptive Fault-Tolerant Legged Robots</p>
+              <p class="pub-authors">Y Fu, Y Zhang, Q Yang, L Yan, <strong>Z Cao</strong>, Y Gao</p>
+              <p class="pub-venue">Conference on Robot Learning, 3285-3303</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:hMod-77fHWUC" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">Learning Robust Motion Skills via Critical Adversarial Attacks for Humanoid Robots</p>
+              <p class="pub-authors">Y Zhang, <strong>Z Cao</strong>, B Nie, H Li, Y Gao</p>
+              <p class="pub-venue">arXiv e-prints, arXiv:2507.08303</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:NaGl4SEjCO4C" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2507.08303" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">Anticipate Before Act: Prediction Based Constrained Reinforcement Learning Framework for Skiing Robot Control</p>
+              <p class="pub-authors">H Li, X Yang, J Zhu, <strong>Z Cao</strong>, Y Zhang, Y Gao</p>
+              <p class="pub-venue">IEEE Robotics and Automation Letters</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:J_g5lzvAfSwC" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+
+          <article class="publication highlight">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">UniLegs: Universal Multi-Legged Robot Control through Morphology-Agnostic Policy Distillation</p>
+              <p class="pub-authors">W Xi, <strong>Z Cao</strong>, C Ming, J Zheng, G Zhou</p>
+              <p class="pub-venue">2025 IEEE/RSJ International Conference on Intelligent Robots and Systems</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:g5m5HwL7SMYC" target="_blank" rel="noreferrer">Scholar</a><a href="https://arxiv.org/abs/2507.22653" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2025</div>
+            <div>
+              <p class="pub-title">Stochastic Trajectory Optimization for Robotic Skill Acquisition From a Suboptimal Demonstration</p>
+              <p class="pub-authors">C Ming, Z Wang, B Zhang, <strong>Z Cao</strong>, X Duan, J He</p>
+              <p class="pub-venue">IEEE Robotics and Automation Letters</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:GnPB-g6toBAC" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+
+          <h3>2024</h3>
+          <article class="publication">
+            <div class="pub-year">2024</div>
+            <div>
+              <p class="pub-title">Constrained Dirichlet Distribution Policy: Guarantee Zero Constraint Violation Reinforcement Learning for Continuous Robotic Control</p>
+              <p class="pub-authors">J Ma, <strong>Z Cao</strong>, Y Gao</p>
+              <p class="pub-venue">IEEE Robotics and Automation Letters 9 (12), 11690-11697</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:70eg2SAEIzsC" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+
+          <h3>2023</h3>
+          <article class="publication">
+            <div class="pub-year">2023</div>
+            <div>
+              <p class="pub-title">Real is Better than Perfect: Sim-to-Real Robotic System in Secondary School Education</p>
+              <p class="pub-authors">J Gao, H Guo, <strong>Z Cao</strong>, P Huang, G Zhou</p>
+              <p class="pub-venue">2023 IEEE/RSJ International Conference on Intelligent Robots and Systems</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:vV6vV6tmYwMC" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+
+          <h3>Preprints and Manuscripts</h3>
+          <article class="publication">
+            <div class="pub-year">SSRN</div>
+            <div>
+              <p class="pub-title">Safety Protection for Reinforcement Learning-Based Motion Policy Improvement in Legged Robots</p>
+              <p class="pub-authors">Y Zhang, Y Gao, <strong>Z Cao</strong></p>
+              <p class="pub-venue">Available at SSRN 5067499</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:ns9cj8rnVeAC" target="_blank" rel="noreferrer">Scholar</a></p>
+            </div>
+          </article>
+        </section>
+
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <div class="timeline-item">
+            <strong>Shanghai Jiao Tong University / Shanghai Innovation Institute</strong>
+            <span>Direct-track Ph.D. student in Computer Science, 2023 - Present</span>
+          </div>
+          <div class="timeline-item">
+            <strong>Tsinghua University</strong>
+            <span>B.Eng. in Automation, 2019 - 2023</span>
+          </div>
+        </section>
+
+        <footer class="footer">
+          Design adapted from open-source academic homepage templates, including
+          <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noreferrer">academic-homepage</a>.
+          Last updated: June 2026.
+        </footer>
+      </main>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
