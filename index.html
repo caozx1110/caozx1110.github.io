@@ -12,7 +12,7 @@
     <meta property="og:image" content="assets/profile.jpg">
     <link rel="icon" href="assets/favicon.svg?v=20260604-2" type="image/svg+xml">
     <meta name="theme-color" content="#f8f5ef">
-    <link rel="stylesheet" href="academic.css?v=20260921-format">
+    <link rel="stylesheet" href="academic.css?v=20261019-visual">
   </head>
   <body>
     <a class="skip-link" href="#about" data-zh="跳转至正文">Skip to content</a>
@@ -36,8 +36,8 @@
         <nav class="topnav" aria-label="Main navigation" data-zh-label="主导航">
           <a href="#about" data-zh="关于我">About</a>
           <a href="#news" data-zh="最新动态">News</a>
-          <a href="#highlights" data-zh="代表作">Highlights</a>
-          <a href="#publications" data-zh="论文发表">Publications</a>
+          <a href="#highlights" data-zh="代表作">Selected Work</a>
+          <a href="#publications" data-zh="其他论文">Other Papers</a>
           <a href="#education" data-zh="教育经历">Education</a>
           <div class="language-switch" role="group" aria-label="Language" data-zh-label="语言" hidden>
             <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
@@ -48,6 +48,7 @@
         <p class="sr-only" id="language-status" role="status" aria-live="polite"></p>
 
         <section id="about" class="section">
+          <p class="eyebrow" data-zh="机器人 · 学习 · 控制">Robotics · Learning · Control</p>
           <h2 data-zh="关于我">About</h2>
           <p data-zh="我是上海交通大学与上海创智学院联合培养的计算机科学直博生。我的研究聚焦机器人学习、强化学习、人形机器人、足式运动控制、移动操作，以及仿真到现实的迁移。">
             I am a direct-track Ph.D. student in Computer Science at Shanghai
@@ -58,74 +59,104 @@
           <p data-zh="我于 2023 年获得清华大学自动化专业工学学士学位。">
             I received my B.Eng. in Automation from Tsinghua University in 2023.
           </p>
+          <nav class="research-topics" aria-label="Research themes" data-zh-label="研究主题">
+            <a href="#hiwet" data-zh="人形机器人与移动操作">Humanoid loco-manipulation <span aria-hidden="true">↗</span></a>
+            <a href="#unilab" data-zh="机器人强化学习">Robot reinforcement learning <span aria-hidden="true">↗</span></a>
+            <a href="#unilegs" data-zh="足式运动与迁移">Legged locomotion &amp; transfer <span aria-hidden="true">↗</span></a>
+          </nav>
         </section>
 
         <section id="news" class="section">
           <h2 data-zh="最新动态">News</h2>
           <ul class="news-list">
-            <li><span class="news-date"><time datetime="2026-09-05" data-zh="2026-09-05">2026-09-05</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2026 · 已接收&lt;/span&gt; &lt;a href=&quot;#unilab&quot;&gt;UniLab&lt;/a&gt; 与 &lt;a href=&quot;#geoalign&quot;&gt;GeoAlign&lt;/a&gt;"><span class="venue-badge">CoRL 2026 · Accepted</span> <a href="#unilab">UniLab</a> and <a href="#geoalign">GeoAlign</a></div></li>
-            <li><span class="news-date"><time datetime="2026-04-27" data-zh="2026-04-27">2026-04-27</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RSS 2026 · 已接收&lt;/span&gt; HiWET 与 GS-Playground"><span class="venue-badge">RSS 2026 · Accepted</span> HiWET and GS-Playground</div></li>
-            <li><span class="news-date"><time datetime="2026-01-31" data-zh="2026-01-31">2026-01-31</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026 · 已接收&lt;/span&gt; A2CF、HierKick 与 Disturbance-Aware"><span class="venue-badge">ICRA 2026 · Accepted</span> A2CF, HierKick, and Disturbance-Aware</div></li>
-            <li><span class="news-date"><time datetime="2025-06" data-zh="2025-06（中旬）">2025-06 (mid)</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2025 · 已接收&lt;/span&gt; MUTE 与 UniLegs"><span class="venue-badge">IROS 2025 · Accepted</span> MUTE and UniLegs</div></li>
+            <li><span class="news-date"><time datetime="2026-09-05" data-zh="2026-09-05">2026-09-05</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2026&lt;/span&gt; &lt;a href=&quot;#unilab&quot;&gt;UniLab&lt;/a&gt; 与 &lt;a href=&quot;#geoalign&quot;&gt;GeoAlign&lt;/a&gt;"><span class="venue-badge">CoRL 2026</span> <a href="#unilab">UniLab</a> and <a href="#geoalign">GeoAlign</a></div></li>
+            <li><span class="news-date"><time datetime="2026-04-27" data-zh="2026-04-27">2026-04-27</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RSS 2026&lt;/span&gt; HiWET 与 GS-Playground"><span class="venue-badge">RSS 2026</span> HiWET and GS-Playground</div></li>
+            <li><span class="news-date"><time datetime="2026-01-31" data-zh="2026-01-31">2026-01-31</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026&lt;/span&gt; A2CF、HierKick 与 Disturbance-Aware"><span class="venue-badge">ICRA 2026</span> A2CF, HierKick, and Disturbance-Aware</div></li>
+            <li><span class="news-date"><time datetime="2025-06" data-zh="2025-06（中旬）">2025-06 (mid)</time></span><div data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2025&lt;/span&gt; MUTE 与 UniLegs"><span class="venue-badge">IROS 2025</span> MUTE and UniLegs</div></li>
           </ul>
         </section>
 
         <section id="highlights" class="section">
-          <h2 data-zh="代表作">Highlights</h2>
-          <p class="section-note" data-zh="精选第一作者与共同第一作者论文。">Selected first-author and co-first-author papers.</p>
+          <h2 data-zh="代表作">Selected Work</h2>
+          <p class="section-note" data-zh="精选第一作者与共同第一作者论文。* 表示同等贡献。">Selected first-author and co-first-author papers. * Equal contribution.</p>
           <article id="unilab" class="publication highlight">
-            <div class="pub-year">2026</div>
+            <figure class="pub-figure">
+              <a href="assets/unilab.jpg?v=20261019-2" target="_blank" rel="noreferrer" aria-label="View unilab figure" data-zh-label="查看 unilab 大图">
+                <img src="assets/unilab.jpg?v=20261019-2" alt="UniLab real-world robot task demonstrations" data-zh-alt="UniLab 机器人实机任务展示" width="1400" height="900" loading="lazy" decoding="async">
+              </a>
+              <figcaption><span>2026</span><span data-zh="机器人强化学习基础设施">Robot RL infrastructure</span></figcaption>
+            </figure>
             <div>
               <p class="pub-title">UniLab: A Heterogeneous Architecture for Robot RL Beyond GPU-Dominant Paradigms</p>
               <p class="pub-authors">Y Jia*, <strong>Z Cao*</strong>, M Yu*, H Zhang*, S Chen*, D Jiang*, M Li, X Li, Y Liu, J Wu, Z Li, ...</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2026 · 已接收&lt;/span&gt; Conference on Robot Learning, 2026. * 表示同等贡献。"><span class="venue-badge">CoRL 2026 · Accepted</span> Conference on Robot Learning, 2026. * Equal contribution.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2026&lt;/span&gt; Conference on Robot Learning, 2026. * 表示同等贡献。"><span class="venue-badge">CoRL 2026</span> Conference on Robot Learning, 2026. * Equal contribution.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:HoB7MX3m0LUC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://arxiv.org/abs/2605.30313" target="_blank" rel="noreferrer">arXiv</a><a href="https://unilabsim.github.io/paper/" target="_blank" rel="noreferrer" data-zh="项目主页">Project</a></p>
             </div>
           </article>
 
-          <article class="publication highlight">
-            <div class="pub-year">2026</div>
+          <article id="hiwet" class="publication highlight">
+            <figure class="pub-figure">
+              <a href="assets/hiwet.jpg" target="_blank" rel="noreferrer" aria-label="View hiwet figure" data-zh-label="查看 hiwet 大图">
+                <img src="assets/hiwet.jpg" alt="HiWET humanoid end-effector tracking tasks" data-zh-alt="HiWET 人形机器人末端跟踪任务" width="1400" height="900" loading="lazy" decoding="async">
+              </a>
+              <figcaption><span>2026</span><span data-zh="人形机器人移动操作">Humanoid loco-manipulation</span></figcaption>
+            </figure>
             <div>
               <p class="pub-title">HiWET: Hierarchical World-Frame End-Effector Tracking for Long-Horizon Humanoid Loco-Manipulation</p>
               <p class="pub-authors"><strong>Z Cao</strong>, L Yan, Y Zhang, S Chen, J Ma, T Zhan, S Fu, Y Jia, C Lu, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RSS 2026 · 已接收&lt;/span&gt; Robotics: Science and Systems (RSS), 2026."><span class="venue-badge">RSS 2026 · Accepted</span> Robotics: Science and Systems (RSS), 2026.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RSS 2026&lt;/span&gt; Robotics: Science and Systems (RSS), 2026."><span class="venue-badge">RSS 2026</span> Robotics: Science and Systems (RSS), 2026.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:ldfaerwXgEUC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://arxiv.org/abs/2602.06341" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
 
-          <article class="publication highlight">
-            <div class="pub-year">2025</div>
+          <article id="a2cf" class="publication highlight">
+            <figure class="pub-figure">
+              <a href="assets/a2cf.jpg?v=20261019-2" target="_blank" rel="noreferrer" aria-label="View a2cf figure" data-zh-label="查看 a2cf 大图">
+                <img src="assets/a2cf.jpg?v=20261019-2" alt="Humanoid robot performing learned dance motions" data-zh-alt="人形机器人执行学到的舞蹈动作" width="1400" height="900" loading="lazy" decoding="async">
+              </a>
+              <figcaption><span>2026</span><span data-zh="运动技能学习">Learning motion skills</span></figcaption>
+            </figure>
             <div>
               <p class="pub-title">Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots</p>
               <p class="pub-authors"><strong>Z Cao</strong>, Y Zhang, B Nie, H Lin, H Li, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026 · 已接收&lt;/span&gt; IEEE International Conference on Robotics and Automation (ICRA), 2026."><span class="venue-badge">ICRA 2026 · Accepted</span> IEEE International Conference on Robotics and Automation (ICRA), 2026.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026&lt;/span&gt; IEEE International Conference on Robotics and Automation (ICRA), 2026."><span class="venue-badge">ICRA 2026</span> IEEE International Conference on Robotics and Automation (ICRA), 2026.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:BqipwSGYUEgC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://arxiv.org/abs/2506.23125" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
 
-          <article class="publication highlight">
-            <div class="pub-year">2025</div>
+          <article id="mute" class="publication highlight">
+            <figure class="pub-figure">
+              <a href="assets/mute.jpg?v=20261019-2" target="_blank" rel="noreferrer" aria-label="View mute figure" data-zh-label="查看 mute 大图">
+                <img src="assets/mute.jpg?v=20261019-2" alt="MUTE quadruped robot with an onboard noise sensor" data-zh-alt="MUTE 搭载噪声传感器的四足机器人" width="1400" height="900" loading="lazy" decoding="async">
+              </a>
+              <figcaption><span>2025</span><span data-zh="四足机器人安静运动">Quiet quadruped locomotion</span></figcaption>
+            </figure>
             <div>
               <p class="pub-title">MUTE: Minimizing Acoustic Noise: Enhancing Quiet Locomotion for Quadruped Robots in Indoor Applications</p>
               <p class="pub-authors"><strong>Z Cao</strong>, B Nie, Y Zhang, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2025 · 已发表&lt;/span&gt; IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 17972-17979."><span class="venue-badge">IROS 2025 · Published</span> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 17972-17979.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2025&lt;/span&gt; IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 17972-17979."><span class="venue-badge">IROS 2025</span> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 17972-17979.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:lSLTfruPkqcC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1109/IROS60139.2025.11246563" target="_blank" rel="noreferrer">DOI</a><a href="https://arxiv.org/abs/2506.23114" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
 
-          <article class="publication highlight">
-            <div class="pub-year">2025</div>
+          <article id="unilegs" class="publication highlight">
+            <figure class="pub-figure">
+              <a href="assets/unilegs.jpg" target="_blank" rel="noreferrer" aria-label="View unilegs figure" data-zh-label="查看 unilegs 大图">
+                <img src="assets/unilegs.jpg" alt="UniLegs real-world multi-legged robot experiments" data-zh-alt="UniLegs 多足机器人实机实验" width="1400" height="900" loading="lazy" decoding="async">
+              </a>
+              <figcaption><span>2025</span><span data-zh="跨形态运动控制">Control across morphologies</span></figcaption>
+            </figure>
             <div>
               <p class="pub-title">UniLegs: Universal Multi-Legged Robot Control through Morphology-Agnostic Policy Distillation</p>
               <p class="pub-authors">W Xi*, <strong>Z Cao*</strong>, C Ming, J Zheng, G Zhou</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2025 · 已发表&lt;/span&gt; IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 10698-10703. * 表示同等贡献。"><span class="venue-badge">IROS 2025 · Published</span> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 10698-10703. * Equal contribution.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2025&lt;/span&gt; IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 10698-10703. * 表示同等贡献。"><span class="venue-badge">IROS 2025</span> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025, pp. 10698-10703. * Equal contribution.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:g5m5HwL7SMYC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1109/IROS60139.2025.11246243" target="_blank" rel="noreferrer">DOI</a><a href="https://arxiv.org/abs/2507.22653" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
         </section>
 
         <section id="publications" class="section">
-          <h2 data-zh="其他论文">Other Publications</h2>
+          <h2 data-zh="其他论文">Other Papers</h2>
           <p class="section-note" data-zh="其他合作论文，按年份排列。">Additional publications, listed by year.</p>
 
           <h3>2026</h3>
@@ -135,7 +166,7 @@
             <div>
               <p class="pub-title">GeoAlign: Beyond Semantics with State-Guided Spatial Alignment in VLA Models</p>
               <p class="pub-authors">Y Chen, <strong>Z Cao</strong>, X Peng, Y Zheng, X Si, Y Li, L Yan, K Zhu, X Chen, S Fu, T Zhan, Y Jia, J Yao, Y Xie, K Wang, C Lu, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2026 · 已接收&lt;/span&gt; Conference on Robot Learning, 2026."><span class="venue-badge">CoRL 2026 · Accepted</span> Conference on Robot Learning, 2026.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2026&lt;/span&gt; Conference on Robot Learning, 2026."><span class="venue-badge">CoRL 2026</span> Conference on Robot Learning, 2026.</p>
               <p class="pub-links"><a href="https://arxiv.org/abs/2606.03240" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
@@ -145,7 +176,7 @@
             <div>
               <p class="pub-title">GS-Playground: A High-Throughput Photorealistic Simulator for Vision-Informed Robot Learning</p>
               <p class="pub-authors">Y Jia, H Zhang, Z Zhang, J Wu, M Yu, Z Wang, D Jiang, Z Li, C Cao, Z Yu, ...</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RSS 2026 · 已接收&lt;/span&gt; Robotics: Science and Systems (RSS), 2026."><span class="venue-badge">RSS 2026 · Accepted</span> Robotics: Science and Systems (RSS), 2026.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RSS 2026&lt;/span&gt; Robotics: Science and Systems (RSS), 2026."><span class="venue-badge">RSS 2026</span> Robotics: Science and Systems (RSS), 2026.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:pqnbT2bcN3wC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://arxiv.org/abs/2604.25459" target="_blank" rel="noreferrer">arXiv</a><a href="https://gsplayground.github.io/" target="_blank" rel="noreferrer" data-zh="项目主页">Project</a></p>
             </div>
           </article>
@@ -155,7 +186,7 @@
             <div>
               <p class="pub-title">HierKick: Hierarchical Reinforcement Learning for Vision-Guided Soccer Robot Control</p>
               <p class="pub-authors">Y Chen, Z Zhang, <strong>Z Cao</strong>, Y Chen, S Fu, L Yan, Y Zhang, J Liu, H Li, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026 · 已接收&lt;/span&gt; IEEE International Conference on Robotics and Automation (ICRA), 2026."><span class="venue-badge">ICRA 2026 · Accepted</span> IEEE International Conference on Robotics and Automation (ICRA), 2026.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026&lt;/span&gt; IEEE International Conference on Robotics and Automation (ICRA), 2026."><span class="venue-badge">ICRA 2026</span> IEEE International Conference on Robotics and Automation (ICRA), 2026.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:M05iB0D1s5AC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://arxiv.org/abs/2603.00948" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
@@ -176,7 +207,7 @@
             <div>
               <p class="pub-title">Keep On Going: Learning Robust Humanoid Motion Skills via Selective Adversarial Training</p>
               <p class="pub-authors">Y Zhang, <strong>Z Cao</strong>, B Nie, H Li, Z Jiangwei, Q Sun, X Hu, X Yang, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;AAAI 2026 · 已发表&lt;/span&gt; Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18800-18808, 2026."><span class="venue-badge">AAAI 2026 · Published</span> Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18800-18808, 2026.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;AAAI 2026&lt;/span&gt; Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18800-18808, 2026."><span class="venue-badge">AAAI 2026</span> Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18800-18808, 2026.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:35N4QoGY0k4C" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1609/aaai.v40i22.38949" target="_blank" rel="noreferrer">DOI</a><a href="https://arxiv.org/abs/2507.08303" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
@@ -186,22 +217,24 @@
             <div>
               <p class="pub-title">Coordinated Humanoid Robot Locomotion with Symmetry Equivariant Reinforcement Learning Policy</p>
               <p class="pub-authors">B Nie, Y Zhang, R Jin, <strong>Z Cao</strong>, H Lin, X Yang, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;AAAI 2026 · 已发表&lt;/span&gt; Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18523-18531, 2026."><span class="venue-badge">AAAI 2026 · Published</span> Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18523-18531, 2026.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;AAAI 2026&lt;/span&gt; Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18523-18531, 2026."><span class="venue-badge">AAAI 2026</span> Proceedings of the AAAI Conference on Artificial Intelligence, 40 (22), 18523-18531, 2026.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:RGFaLdJalmkC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1609/aaai.v40i22.38918" target="_blank" rel="noreferrer">DOI</a><a href="https://arxiv.org/abs/2508.01247" target="_blank" rel="noreferrer">arXiv</a></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="pub-year">2026</div>
+            <div>
+              <p class="pub-title">Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots</p>
+              <p class="pub-authors">Y Zhang, B Nie, <strong>Z Cao</strong>, Y Fu, Y Gao</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026&lt;/span&gt; IEEE International Conference on Robotics and Automation (ICRA), 2026."><span class="venue-badge">ICRA 2026</span> IEEE International Conference on Robotics and Automation (ICRA), 2026.</p>
+              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:O3NaXMp0MMsC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noreferrer">arXiv</a></p>
             </div>
           </article>
 
           <h3>2025</h3>
 
-          <article class="publication">
-            <div class="pub-year">2025</div>
-            <div>
-              <p class="pub-title">Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots</p>
-              <p class="pub-authors">Y Zhang, B Nie, <strong>Z Cao</strong>, Y Fu, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;ICRA 2026 · 已接收&lt;/span&gt; IEEE International Conference on Robotics and Automation (ICRA), 2026."><span class="venue-badge">ICRA 2026 · Accepted</span> IEEE International Conference on Robotics and Automation (ICRA), 2026.</p>
-              <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:O3NaXMp0MMsC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noreferrer">arXiv</a></p>
-            </div>
-          </article>
+
 
 
           <article class="publication">
@@ -209,7 +242,7 @@
             <div>
               <p class="pub-title">Contrastive Forward Prediction Reinforcement Learning for Adaptive Fault-Tolerant Legged Robots</p>
               <p class="pub-authors">Y Fu, Y Zhang, Q Yang, L Yan, <strong>Z Cao</strong>, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2025 · 已发表&lt;/span&gt; Proceedings of The 9th Conference on Robot Learning, PMLR 305:3285-3303, 2025."><span class="venue-badge">CoRL 2025 · Published</span> Proceedings of The 9th Conference on Robot Learning, PMLR 305:3285-3303, 2025.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;CoRL 2025&lt;/span&gt; Proceedings of The 9th Conference on Robot Learning, PMLR 305:3285-3303, 2025."><span class="venue-badge">CoRL 2025</span> Proceedings of The 9th Conference on Robot Learning, PMLR 305:3285-3303, 2025.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:hMod-77fHWUC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://proceedings.mlr.press/v305/fu25b.html" target="_blank" rel="noreferrer">PMLR</a></p>
             </div>
           </article>
@@ -219,7 +252,7 @@
             <div>
               <p class="pub-title">Anticipate Before Act: Prediction Based Constrained Reinforcement Learning Framework for Skiing Robot Control</p>
               <p class="pub-authors">H Li, X Yang, J Zhu, <strong>Z Cao</strong>, Y Zhang, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RA-L 2025 · 已发表&lt;/span&gt; IEEE Robotics and Automation Letters 10 (12), 13169-13176, 2025."><span class="venue-badge">RA-L 2025 · Published</span> IEEE Robotics and Automation Letters 10 (12), 13169-13176, 2025.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RA-L 2025&lt;/span&gt; IEEE Robotics and Automation Letters 10 (12), 13169-13176, 2025."><span class="venue-badge">RA-L 2025</span> IEEE Robotics and Automation Letters 10 (12), 13169-13176, 2025.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:J_g5lzvAfSwC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1109/LRA.2025.3625514" target="_blank" rel="noreferrer">DOI</a></p>
             </div>
           </article>
@@ -230,7 +263,7 @@
             <div>
               <p class="pub-title">Stochastic Trajectory Optimization for Robotic Skill Acquisition From a Suboptimal Demonstration</p>
               <p class="pub-authors">C Ming, Z Wang, B Zhang, <strong>Z Cao</strong>, X Duan, J He</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RA-L 2025 · 已发表&lt;/span&gt; IEEE Robotics and Automation Letters 10 (6), 6127-6134, 2025."><span class="venue-badge">RA-L 2025 · Published</span> IEEE Robotics and Automation Letters 10 (6), 6127-6134, 2025.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RA-L 2025&lt;/span&gt; IEEE Robotics and Automation Letters 10 (6), 6127-6134, 2025."><span class="venue-badge">RA-L 2025</span> IEEE Robotics and Automation Letters 10 (6), 6127-6134, 2025.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:GnPB-g6toBAC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1109/LRA.2025.3564208" target="_blank" rel="noreferrer">DOI</a></p>
             </div>
           </article>
@@ -241,7 +274,7 @@
             <div>
               <p class="pub-title">Constrained Dirichlet Distribution Policy: Guarantee Zero Constraint Violation Reinforcement Learning for Continuous Robotic Control</p>
               <p class="pub-authors">J Ma, <strong>Z Cao</strong>, Y Gao</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RA-L 2024 · 已发表&lt;/span&gt; IEEE Robotics and Automation Letters 9 (12), 11690-11697, 2024."><span class="venue-badge">RA-L 2024 · Published</span> IEEE Robotics and Automation Letters 9 (12), 11690-11697, 2024.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;RA-L 2024&lt;/span&gt; IEEE Robotics and Automation Letters 9 (12), 11690-11697, 2024."><span class="venue-badge">RA-L 2024</span> IEEE Robotics and Automation Letters 9 (12), 11690-11697, 2024.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:70eg2SAEIzsC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1109/LRA.2024.3490392" target="_blank" rel="noreferrer">DOI</a></p>
             </div>
           </article>
@@ -252,7 +285,7 @@
             <div>
               <p class="pub-title">Real is Better than Perfect: Sim-to-Real Robotic System in Secondary School Education</p>
               <p class="pub-authors">J Gao, H Guo, <strong>Z Cao</strong>, P Huang, G Zhou</p>
-              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2023 · 已发表&lt;/span&gt; IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023, pp. 4480-4487."><span class="venue-badge">IROS 2023 · Published</span> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023, pp. 4480-4487.</p>
+              <p class="pub-venue" data-zh="&lt;span class=&quot;venue-badge&quot;&gt;IROS 2023&lt;/span&gt; IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023, pp. 4480-4487."><span class="venue-badge">IROS 2023</span> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023, pp. 4480-4487.</p>
               <p class="pub-links"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Qaqc4IMAAAAJ&citation_for_view=Qaqc4IMAAAAJ:vV6vV6tmYwMC" target="_blank" rel="noreferrer" data-zh="学术索引">Scholar</a><a href="https://doi.org/10.1109/IROS55552.2023.10341903" target="_blank" rel="noreferrer">DOI</a></p>
             </div>
           </article>
@@ -281,10 +314,10 @@
           </div>
         </section>
 
-        <footer class="footer" data-zh="设计参考了包括 &lt;a href=&quot;https://github.com/luost26/academic-homepage&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;academic-homepage&lt;/a&gt; 在内的开源学术主页模板。最近更新：2026-09-21。">
+        <footer class="footer" data-zh="设计参考了包括 &lt;a href=&quot;https://github.com/luost26/academic-homepage&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;&gt;academic-homepage&lt;/a&gt; 在内的开源学术主页模板。最近更新：2026-10-19。">
           Design adapted from open-source academic homepage templates, including
           <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noreferrer">academic-homepage</a>.
-          Last updated: 2026-09-21.
+          Last updated: 2026-10-19.
         </footer>
       </main>
     </div>
@@ -297,6 +330,9 @@
         const labels = [...document.querySelectorAll('[data-zh-label]')].map(element => ({
           element, en: element.getAttribute('aria-label'), zh: element.dataset.zhLabel
         }));
+        const images = [...document.querySelectorAll('[data-zh-alt]')].map(element => ({
+          element, en: element.alt, zh: element.dataset.zhAlt
+        }));
         const controls = document.querySelector('.language-switch');
         const buttons = [...controls.querySelectorAll('button')];
         const description = document.querySelector('meta[name="description"]');
@@ -308,6 +344,7 @@
           document.documentElement.lang = chinese ? 'zh-CN' : 'en';
           content.forEach(item => { item.element.innerHTML = item[language]; });
           labels.forEach(item => item.element.setAttribute('aria-label', item[language]));
+          images.forEach(item => { item.element.alt = item[language]; });
           buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
           description.content = chinese ? '曹展翔的学术主页：机器人学习、强化学习、人形机器人与足式机器人。' : englishMetadata[0];
           socialTitle.content = chinese ? '曹展翔 | 学术主页' : englishMetadata[1];
