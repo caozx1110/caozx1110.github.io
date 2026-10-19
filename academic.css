@@ -24,6 +24,9 @@ html[lang="zh-CN"] #about p { line-height: 1.9; }
 .news-list { margin: 0; padding: 0; list-style: none; }
 .news-list li { display: grid; gap: 12px; border-bottom: 1px solid var(--line); }
 .news-list li:last-child { border-bottom: 0; }
+.news-archive { margin-top: 16px; }
+.news-archive summary { color: var(--accent); cursor: pointer; font-size: 13px; padding: 8px 0; }
+.news-archive summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .publication { display: grid; }
 .pub-year { align-self: start; }
 .pub-authors, .pub-venue { color: var(--muted); }
